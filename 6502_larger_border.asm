@@ -1,3 +1,5 @@
+// KickAssembler syntax
+
 DrawBorders: {
 
 	.label SCREEN_RAM = $0400
