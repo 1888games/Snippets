@@ -4,8 +4,8 @@ DrawBorders: {
 
 	.label SCREEN_RAM = $0400
 	.label COLOR_RAM = $D800
-	.label ZP_SCREEN_ADDRESS = $02
-	.label ZP_COLOR_ADDRESS = $04
+	.label ZP_SCREEN_ADDRESS = $FB
+	.label ZP_COLOR_ADDRESS = $FD
 	.label END_COLUMN_1 = 10
 	.label START_COLUMN_2 = 30
 	.label ROW_WIDTH = 40
@@ -51,7 +51,7 @@ DrawBorders: {
 			lda #BLOCK_CHAR
 			sta (ZP_SCREEN_ADDRESS), y
 
-			// stores to whatever address is in $02-03, plus Y offset
+			// stores to whatever address is in $FB-FC, plus Y offset
 			// must use Y, not X
 
 		ColourRam:
