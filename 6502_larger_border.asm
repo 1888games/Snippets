@@ -1,6 +1,6 @@
 DrawBorders: {
 
-		.label SCREEN_RAM = $C000
+		.label SCREEN_RAM = $0400
 		.label COLOR_RAM = $D800
 		.label ZP_SCREEN_ADDRESS = $02
 		.label ZP_COLOR_ADDRESS = $04
